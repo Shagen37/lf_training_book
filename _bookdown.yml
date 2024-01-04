@@ -5,6 +5,8 @@ language:
 delete_merged_file: true
 new_session: true
 
+output_dir: "docs"
+
 rmd_files: [
   "index.Rmd",
   
