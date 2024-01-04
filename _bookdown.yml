@@ -16,3 +16,5 @@ rmd_files: [
   "gis-explore.Rmd",
   "gis-map.Rmd"
 ]
+
+output_dir: "docs"
