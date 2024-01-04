@@ -1,4 +1,4 @@
-Rendered product: <https://happygitwithr.com>
+Rendered product: <!--https://happygitwithr.com-->
 
 <!-- badges: start -->
 [![bookdown](https://github.com/jennybc/happy-git-with-r/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/jennybc/happy-git-with-r/actions/workflows/bookdown.yaml)
