@@ -6,7 +6,7 @@ output: html_document
 ---
 
 
-## The four ways to download LANDFIRE Spatial Data
+# The four ways to download LANDFIRE Spatial Data
 
 LANDFIRE provides three ways to download spatial data:
 

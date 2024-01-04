@@ -9,7 +9,7 @@ url: 'https\://happygitwithr.com/'
 cover-image: img/sign.jpg
 ---
 
-## Background
+# Background
 
 [LANDFIRE](https://landfire.gov/index.php) products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:
 

@@ -6,7 +6,7 @@ output: html_document
 ---
 
 
-## Randy's Notes on this page
+# Randy's Notes on this page
 
 **Downloading and understanding BpS descriptions**
 

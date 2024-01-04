@@ -6,7 +6,7 @@ output: html_document
 ---
 
 
-## Randy's notes
+# Randy's notes
 
 * explore attribute tables of each dataset
 * discuss different attributes of EVT and BpS 
