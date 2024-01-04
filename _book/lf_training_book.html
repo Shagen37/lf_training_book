@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>0.1 Background | Make a map</title>
+
+    <meta name="author" content="Randy Swaty" />
+  
+   <meta name="description" content="Map and quantify historical and current vegetation on your landscape with LANDFIRE data." />
+   <meta name="generator" content="placeholder" />
+  <meta property="og:title" content="0.1 Background | Make a map" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://happygitwithr.com/" />
+  <meta property="og:image" content="https://happygitwithr.com//img/sign.jpg" />
+  <meta property="og:description" content="Map and quantify historical and current vegetation on your landscape with LANDFIRE data." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="0.1 Background | Make a map" />
+  
+  <meta name="twitter:description" content="Map and quantify historical and current vegetation on your landscape with LANDFIRE data." />
+  <meta name="twitter:image" content="https://happygitwithr.com//img/sign.jpg" />
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script>
+    <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+    <script src="libs/bs3compat-0.5.1/transition.js"></script>
+    <script src="libs/bs3compat-0.5.1/tabs.js"></script>
+    <script src="libs/bs3compat-0.5.1/bs3compat.js"></script>
+    <link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet" />
+    <script src="libs/bs4_book-1.0.0/bs4_book.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+    
+</head>
+
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Make a map</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <nav aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <div id="book-toc"></div>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="#">View book source <i class="fab fa-github"></i></a></li></p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="col-sm-12 col-md-9 col-lg-7" id="content">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="background" class="section level2" number="0.1">
+<h2><span class="header-section-number">0.1</span> Background</h2>
+<p><a href="https://landfire.gov/index.php">LANDFIRE</a> products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:</p>
+<div class="float">
+<img src="img/bps.jpg" style="float:right; margin-left: 25px;" fig-alt="&quot;Historical ecosystems map of a large region in the western United States." fig-align="right" width="250" alt="Historical ecosystems map." />
+<div class="figcaption">Historical ecosystems map.</div>
+</div>
+<ul>
+<li>Mapping and quantifying historical ecosystems (see map below made with <a href="https://landfire.gov/bps.php">LANDFIRE’s Biophysical Settings data</a>)</li>
+<li>Mapping and quantifying existing vegetation type, height and cover</li>
+<li>Comparing reference and current amounts of ecosystem succession classes</li>
+</ul>
+<p>While useful, effectively working with LANDFIRE products can be intimidating due to terminology, GIS processing and data wrangling often required.</p>
+<p>Additionally, the “fire-hose” of information can pose a problem. Where is a user to start?</p>
+</div>
+<div id="goals" class="section level2" number="0.2">
+<h2><span class="header-section-number">0.2</span> Goals</h2>
+<p>Often a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:</p>
+<ul>
+<li>Download and process multiple LANDFIRE datasets</li>
+<li>Bring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)</li>
+<li>Quantify and make charts of attributes of interest</li>
+<li>Understand the basics of Biophysical Settings and Models</li>
+</ul>
+</div>
+<div id="prerequsites" class="section level2" number="0.3">
+<h2><span class="header-section-number">0.3</span> Prerequsites</h2>
+<div id="the-following-software" class="section level3" number="0.3.1">
+<h3><span class="header-section-number">0.3.1</span> The following software</h3>
+<ul>
+<li>ArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)</li>
+<li>Microsoft Excel (or similar) and/or <a href="https://cran.rstudio.com/">R</a> and <a href="https://posit.co/download/rstudio-desktop/">R-Studio</a></li>
+<li>SyncroSim</li>
+<li>Microsoft word (or similar)</li>
+</ul>
+</div>
+<div id="other" class="section level3" number="0.3.2">
+<h3><span class="header-section-number">0.3.2</span> Other</h3>
+<ul>
+<li>A shapefile of your area of interest</li>
+<li>Internet access</li>
+<li>Space to store data</li>
+<li>X# hours</li>
+</ul>
+
+</div>
+</div>
+<div id="randys-notes-on-this-page" class="section level2" number="0.4">
+<h2><span class="header-section-number">0.4</span> Randy’s Notes on this page</h2>
+<p><strong>Downloading and understanding BpS descriptions</strong></p>
+<ul>
+<li>going over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:
+<ul>
+<li>BpS</li>
+<li>EVT though s-class rule table (where we get lifeform)</li>
+<li>EVC and EVH-rule table</li>
+<li>S-class–look at succession class descriptions to understand what “A” means in an addtional way (in addtion to s-class table)</li>
+</ul></li>
+<li>demo downloading BpS descriptions</li>
+<li>describe key features/sections of document</li>
+<li>link to Blankenship et al 2021</li>
+</ul>
+
+</div>
+<div id="randys-notes-on-this-page-1" class="section level2" number="0.5">
+<h2><span class="header-section-number">0.5</span> Randy’s notes on this page</h2>
+<ul>
+<li>set folks up to explore BpS models (link to veg modeling page, etc.)</li>
+</ul>
+</div>
+<div id="syncrosim" class="section level2" number="0.6">
+<h2><span class="header-section-number">0.6</span> SyncroSim</h2>
+<p>Where to get.</p>
+
+</div>
+<div id="the-four-ways-to-download-landfire-spatial-data" class="section level2" number="0.7">
+<h2><span class="header-section-number">0.7</span> The four ways to download LANDFIRE Spatial Data</h2>
+<p>LANDFIRE provides three ways to download spatial data:</p>
+<ol style="list-style-type: decimal">
+<li>Using the <a href="https://www.landfire.gov/viewer/">LANDFIRE Map Viewer</a></li>
+<li>Downloading CONUS, Hawaii, Alaska or insular area-wide data</li>
+<li>Streaming the data with a webservice</li>
+</ol>
+<p>Additionally, <a href="https://markabuckner.com/">Mark Buckner</a> has created the <a href="https://github.com/bcknr/rlandfire">rlandfire</a> package, which allows for direct downloading of LANDFIRE data into an R environment.</p>
+<p>For this tutorial we will use option 1, downloading data via the LANDFIRE Map Viewer (LMV).</p>
+
+</div>
+<div id="randys-notes" class="section level2" number="0.8">
+<h2><span class="header-section-number">0.8</span> Randy’s notes</h2>
+<ul>
+<li>explore attribute tables of each dataset</li>
+<li>discuss different attributes of EVT and BpS</li>
+<li>limitations of sclass data</li>
+</ul>
+
+</div>
+<div id="randys-notes-1" class="section level2" number="0.9">
+<h2><span class="header-section-number">0.9</span> Randy’s notes</h2>
+<div id="accessibility" class="section level3" number="0.9.1">
+<h3><span class="header-section-number">0.9.1</span> accessibility</h3>
+<ul>
+<li>link to Sarah’s videos</li>
+<li>highlight challenges</li>
+</ul>
+</div>
+<div id="different-maps" class="section level3" number="0.9.2">
+<h3><span class="header-section-number">0.9.2</span> different maps</h3>
+<ul>
+<li>EVT</li>
+<li>EVC or EVH</li>
+</ul>
+
+</div>
+</div>
+  </main>
+
+  <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <div id="book-on-this-page"></div>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          <li><a id="book-source" href="#">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5">
+  <div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Make a map</strong>" was written by Randy Swaty. It was last built on 2024-01-03.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+
+
+</body>
+
+</html>

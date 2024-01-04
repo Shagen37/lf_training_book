@@ -1,0 +1,33 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#4D6F8D"
+  repo:
+      base: https://github.com/jennybc/happy-git-with-r
+      branch: main
+
+bookdown::gitbook:
+  css: style.css
+  config:
+    sharing:
+      github: yes
+      facebook: false
+      twitter: false
+    download: false
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Use LANDFIRE for your landscape assessment</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/jennybc/happy-git-with-r/edit/main/%s
+
+
+
+
+
+
+before: |
+  <li><a href="./">Use LANDFIRE for your landscape assessment</a></li>
+  after: |
+  <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+  edit: https://github.com/jennybc/happy-git-with-r/edit/main/%s
