@@ -1,18 +1,16 @@
-book_filename: "bookdown-start"
+book_filename: "happygitwithr"
 language:
   ui:
-  chapter_name: "Chapter "
+    chapter_name: "Chapter "
 delete_merged_file: true
 new_session: true
 
-output_dir: "docs"
-
 rmd_files: [
   "index.Rmd",
-  
+
   "bps-description.Rmd",
   "bps-model.Rmd",
-  
+
   "data-ways.Rmd",
 
   "gis-explore.Rmd",

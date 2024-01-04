@@ -6,14 +6,14 @@ output: html_document
 ---
 
 
-## Randy's notes
+# Make a map with LANDFIRE data
 
-### accessibility
+## accessibility
 
 * link to Sarah's videos
 * highlight challenges
 
-### different maps
+## different maps
 
 * EVT
 * EVC or EVH

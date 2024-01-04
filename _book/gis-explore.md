@@ -6,7 +6,10 @@ output: html_document
 ---
 
 
-## Randy's notes
+# Explore LF spatial data with ArcGIS Pro
+
+
+**Randy's thoughts**
 
 * explore attribute tables of each dataset
 * discuss different attributes of EVT and BpS 

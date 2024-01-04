@@ -1,51 +1,41 @@
 --- 
-title: "Assess your landscape with LANDFIRE"
-author: "The Nature Conservancy's LANDFIRE team"
+title: "Happy Git and GitHub for the useR"
+author: "Jenny Bryan, the STAT 545 TAs, Jim Hester"
 site: bookdown::bookdown_site
-github-repo: rswaty/lf_training_book
-description: "Map and quantify historical and current vegetation on your landscape with LANDFIRE data."
-twitter-handle: 
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: jennybc/happy-git-with-r
+description: "Using Git and GitHub with R, Rstudio, and R Markdown"
+twitter-handle: jennybryan
 url: 'https\://happygitwithr.com/'
-cover-image: img/sign.jpg
+cover-image: img/watch-me-diff-watch-me-rebase-smaller.png
 ---
 
-## Background
+# Let's Git started {-}
 
-[LANDFIRE](https://landfire.gov/index.php) products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:
+<div class="figure">
+<img src="img/watch-me-diff-watch-me-rebase-smaller.png" width="669" height="400" alt="Cover image" />
+<p class="caption">Still from <a href="https://www.youtube.com/watch?v=uBWrpVrazzA">Heaven King video</a></p>
+</div>
 
-![Historical ecosystems map.](img/bps.jpg){style="float:right; margin-left: 25px;" fig-alt="\"Historical ecosystems map of a large region in the western United States." fig-align="right" width="250" }
+Happy Git provides opinionated instructions on how to:
 
-* Mapping and quantifying historical ecosystems (see map below made with [LANDFIRE's Biophysical Settings data](https://landfire.gov/bps.php))
-* Mapping and quantifying existing vegetation type, height and cover
-* Comparing reference and current amounts of ecosystem succession classes
+  * Install Git and get it working smoothly with GitHub, in the shell and in the [RStudio IDE](https://www.rstudio.com/products/rstudio/).
+  * Develop a few key workflows that cover your most common tasks.
+  * Integrate Git and GitHub into your daily work with R and [R Markdown](https://rmarkdown.rstudio.com).
+  
+The target reader is someone who uses R for data analysis or who works on R packages, although some of the content may be useful to those working in adjacent areas.
 
+The first two parts, [Installation](#install-intro) and [Connect Git, GitHub, RStudio](#connect-intro), provide a "batteries included" quick start to verify your setup.
 
-While useful, effectively working with LANDFIRE products can be intimidating due to terminology, GIS processing and data wrangling often required.
+In [Early GitHub Wins](#usage-intro), we rack up some early success with the basic workflows that are necessary to get your work onto GitHub. We also show the special synergy between R/R Markdown/RStudio and GitHub, which provides a powerful demonstration of why all this setup is worthwhile.
 
-Additionally, the "fire-hose" of information can pose a problem. Where is a user to start?
+The use of Git/GitHub in data science has a slightly different vibe from that of pure software development, due to differences in the user's context and objective. Happy Git aims to complement existing, general Git resources by highlighting the most rewarding usage patterns for data science. This perspective on the Git landscape is presented in [Basic Git Concepts](#git-intro) and [Daily Workflows](#workflows-intro). 
 
-## Goals
+## License {-}
 
-Often a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:
-
-* Download and process multiple LANDFIRE datasets
-* Bring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)
-* Quantify and make charts of attributes of interest
-* Understand the basics of Biophysical Settings and Models
-
-## Prerequsites
-
-### The following software
-* ArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)
-* Microsoft Excel (or similar) and/or [R](https://cran.rstudio.com/) and [R-Studio](https://posit.co/download/rstudio-desktop/)
-* SyncroSim
-* Microsoft word (or similar)
-
-### Other
-* A shapefile of your area of interest
-* Internet access
-* Space to store data
-* X# hours
-
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Happy Git and GitHub for the useR</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/jennybc/happy-git-with-r" property="cc:attributionName" rel="cc:attributionURL">Jennifer Bryan</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 

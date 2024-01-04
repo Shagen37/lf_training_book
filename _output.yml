@@ -1,12 +1,13 @@
 bookdown::bs4_book:
   theme:
     primary: "#4D6F8D"
-  repo:
-      base: https://github.com/jennybc/happy-git-with-r
-      branch: main
-
+  includes:
+    in_header: [ga_script.html]
 bookdown::gitbook:
+  includes:
+    in_header: [ga_script.html]
   css: style.css
+  split_bib: FALSE
   config:
     sharing:
       github: yes
@@ -16,18 +17,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Use LANDFIRE for your landscape assessment</a></li>
+        <li><a href="./">Happy Git and GitHub for the useR</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/jennybc/happy-git-with-r/edit/main/%s
-
-
-
-
-
-
-before: |
-  <li><a href="./">Use LANDFIRE for your landscape assessment</a></li>
-  after: |
-  <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-  edit: https://github.com/jennybc/happy-git-with-r/edit/main/%s

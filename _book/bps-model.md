@@ -5,12 +5,14 @@ date: "2024-01-03"
 output: html_document
 ---
 
-## Randy's notes on this page
+# Biophysical Settings Models
 
 
-* set folks up to explore BpS models (link to veg modeling page, etc.)
+**Randy's thoughts**
 
-## SyncroSim
+Set people up to use SyncroSim:
 
-Where to get.
+* link to veg modeling site
+* show how to use LF package
+* quick tour of how model connects to description
 
