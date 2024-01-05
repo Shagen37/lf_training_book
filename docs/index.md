@@ -1,5 +1,5 @@
 --- 
-title: "Happy Git and GitHub for the useR"
+title: "Assess your landscape with LANDFIRE data"
 author: "Jenny Bryan, the STAT 545 TAs, Jim Hester"
 site: bookdown::bookdown_site
 documentclass: book
