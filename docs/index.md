@@ -1,6 +1,6 @@
 --- 
 title: "Assess your landscape with LANDFIRE data"
-author: "Jenny Bryan, the STAT 545 TAs, Jim Hester"
+author: "The Nature Consercvancy's LANDFIRE team"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -13,7 +13,7 @@ url: 'https\://happygitwithr.com/'
 cover-image: img/watch-me-diff-watch-me-rebase-smaller.png
 ---
 
-# Let's Git started {-}
+# Assess your landscape with LANDFIRE data {-}
 
 <div class="figure">
 <img src="img/watch-me-diff-watch-me-rebase-smaller.png" width="669" height="400" alt="Cover image" />
