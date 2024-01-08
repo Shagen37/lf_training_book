@@ -1,14 +1,9 @@
 --- 
 title: "Assess your landscape with LANDFIRE data"
-author: "The Nature Consercvancy's LANDFIRE team"
+author: "The Nature Conservancy's LANDFIRE team"
 site: bookdown::bookdown_site
-documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
-link-citations: yes
-github-repo: jennybc/happy-git-with-r
-description: "Using Git and GitHub with R, Rstudio, and R Markdown"
-twitter-handle: jennybryan
+github-repo: rswaty/lf_training_book
+description: "Assess your landscape with LANDFIRE data"
 url: 'https\://happygitwithr.com/'
 cover-image: img/watch-me-diff-watch-me-rebase-smaller.png
 ---
