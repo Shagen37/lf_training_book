@@ -1,9 +1,14 @@
 --- 
-title: "Assess your landscape with LANDFIRE data"
-author: "The Nature Conservancy's LANDFIRE team"
+title: "Happy Git and GitHub for the useR"
+author: "Jenny Bryan, the STAT 545 TAs, Jim Hester"
 site: bookdown::bookdown_site
-github-repo: rswaty/lf_training_book
-description: "Assess your landscape with LANDFIRE data"
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: jennybc/happy-git-with-r
+description: "Using Git and GitHub with R, Rstudio, and R Markdown"
+twitter-handle: jennybryan
 url: 'https\://happygitwithr.com/'
 cover-image: img/watch-me-diff-watch-me-rebase-smaller.png
 ---
