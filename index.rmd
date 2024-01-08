@@ -2,9 +2,20 @@
 title: "Assess your landscape with LANDFIRE data"
 author: "The Nature Conservancy's LANDFIRE team"
 site: bookdown::bookdown_site
+<<<<<<< HEAD
 github-repo: rswaty/lf_training_book
 description: "Assess your landscape with LANDFIRE data"
 url: 'https\://happygitwithr.com/'
+=======
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rswaty/landfire_training_book
+description: "Accessing, downloading, and using LANDFIRE data to assess your landscape"
+twitter-handle: <!--jennybryan--> <!--We should consider replacing with our YouTube link. I don't know what the R code for YouTube vs twitter handle is-->
+url: 'https:\rswaty.github.io//lf_training_book/'
+>>>>>>> 3fdf5ebf79273e8fe6a13d5b4bf719e2087995e3
 cover-image: img/watch-me-diff-watch-me-rebase-smaller.png
 ---
 
