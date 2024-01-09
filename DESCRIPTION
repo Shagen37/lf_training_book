@@ -1,5 +1,5 @@
 Package: happygitwithr
-Title: Happy Git and GitHub for the useR
+Title: LANDFIRE Assessment
 Version: 0.1
 Authors@R: 
     person("Jennifer", "Bryan", , "jenny@rstudio.com", role = c("aut", "cre"),
